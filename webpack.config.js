@@ -10,17 +10,17 @@ module.exports = {
         filename:"main.js",
         path: path.resolve(__dirname, "dist"),
         clean:true,
-    },
+        },
     devtool: "eval-source-map",
-  devServer: {
+    devServer: {
     watchFiles: ["./src/template.html"],
-  },
+    },
 
       plugins: [
-    new HtmlWebpackPlugin({
+      new HtmlWebpackPlugin({
       template: "./src/template.html",
-    }),
-  ],
+        }),
+       ],
   module: {
     rules: [
          {
